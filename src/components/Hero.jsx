@@ -58,7 +58,7 @@ const Hero = () => {
             <div className="portrait-frame"></div>
             <div className="portrait-glow"></div>
             <img 
-              src="/images/shreeyash.jpg" 
+              src={`${import.meta.env.BASE_URL}images/shreeyash.jpg`}
               alt="Shreeyash Kayastha" 
               className="portrait-img"
             />

@@ -16,7 +16,7 @@ Successfully integrated your personal portrait image into the Hero section with 
 ```html
 <div class="hero-portrait-section">
   <div class="portrait-container">
-    <img src="images/shreeyash.jpg" alt="Shreeyash Kayastha - Data Analyst & Computational Mathematics Student" class="portrait-image" />
+    <img src="/images/shreeyash.jpg" alt="Shreeyash Kayastha - Data Analyst & Computational Mathematics Student" class="portrait-image" />
     <div class="portrait-frame"></div>
     <div class="portrait-accent"></div>
     <div class="portrait-badge">Data Analyst</div>
