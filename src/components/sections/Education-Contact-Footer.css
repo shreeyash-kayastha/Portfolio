@@ -1,0 +1,249 @@
+/* ==================== EDUCATION & CONTACT ==================== */
+
+/* Education */
+.education {
+  padding: var(--spacing-4xl) 0;
+}
+
+.education .container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-2xl);
+  width: 100%;
+}
+
+.education .section-header {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: var(--spacing-3xl);
+  margin-bottom: var(--spacing-3xl);
+}
+
+.education .section-title {
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.education-timeline {
+  border-left: 2px solid var(--color-accent);
+  padding-left: var(--spacing-2xl);
+  margin-left: var(--spacing-lg);
+}
+
+.education-item {
+  position: relative;
+  padding-bottom: var(--spacing-2xl);
+}
+
+.education-item::before {
+  content: '';
+  position: absolute;
+  left: -35px;
+  top: 6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid var(--color-accent);
+  background: var(--color-bg);
+}
+
+.education-year {
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-text-tertiary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.education-degree {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+}
+
+.education-school {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
+.education-highlights {
+  list-style: none;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.education-highlights li {
+  padding-left: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+  position: relative;
+}
+
+.education-highlights li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+}
+
+/* Contact */
+.contact {
+  padding: var(--spacing-4xl) 0;
+}
+
+.contact .container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-2xl);
+  width: 100%;
+}
+
+.contact .section-header {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: var(--spacing-3xl);
+  margin-bottom: var(--spacing-3xl);
+}
+
+.contact .section-title {
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.contact-content {
+  max-width: 900px;
+  margin: 0 auto var(--spacing-2xl);
+  text-align: center;
+}
+
+.contact-message {
+  font-size: var(--font-size-lg);
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xl);
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  font-size: var(--font-size-base);
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  position: relative;
+}
+
+.contact-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-accent);
+  transition: width var(--transition-base);
+}
+
+.contact-link:hover::after {
+  width: 100%;
+}
+
+.contact-meta {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-2xl);
+  margin-top: var(--spacing-2xl);
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-text-secondary);
+  flex-wrap: wrap;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--color-line);
+  padding: var(--spacing-2xl) 0;
+  margin-top: var(--spacing-4xl);
+}
+
+.footer-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-2xl);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-year {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .education .section-header,
+  .contact .section-header {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .education,
+  .contact {
+    padding: var(--spacing-3xl) 0;
+  }
+
+  .education .container,
+  .contact .container {
+    padding: 0 var(--spacing-lg);
+  }
+
+  .education .section-title,
+  .contact .section-title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .education-degree {
+    font-size: var(--font-size-lg);
+  }
+
+  .education-school {
+    font-size: var(--font-size-base);
+  }
+
+  .contact-message {
+    font-size: var(--font-size-base);
+  }
+
+  .contact-meta {
+    gap: var(--spacing-lg);
+    flex-direction: column;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: var(--spacing-lg);
+    text-align: center;
+    padding: 0 var(--spacing-lg);
+  }
+}
