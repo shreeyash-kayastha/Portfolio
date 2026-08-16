@@ -30,6 +30,13 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Verify build output
+        run: |
+          echo "===== DIST INDEX.HTML ====="
+          cat dist/index.html
+          echo "===== DIST FILES ====="
+          find dist -type f
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
