@@ -136,13 +136,13 @@ export const personalInfo = {
   position: 'Aspiring Data Analyst',
   location: 'Kathmandu, Nepal',
   bio: 'I turn mathematical thinking and messy data into clear, actionable insights that make decisions easier to trust and act on.',
-  email: 'shreeyash.kayastha@gmail.com',
-  github: 'https://github.com',
-  linkedin: 'https://linkedin.com',
+  email: 'shreeyashkayastha@gmail.com',
+  github: 'https://github.com/shreeyash-kayastha',
+  linkedin: 'https://www.linkedin.com/in/shreeyash-kayastha/',
   resume: '/assets/Shreeyash_Kayastha_CV.pdf'
 }
 
-export const recommendations = [
+/*export const recommendations = [
   {
     name: 'Rita Shrestha',
     role: 'Data Mentor',
@@ -158,13 +158,13 @@ export const recommendations = [
     role: 'Project Collaborator',
     quote: 'A thoughtful analyst who balances technical depth with strong communication and visual storytelling in every project.'
   }
-]
+]*/
 
-export const certifications = [
+/*export const certifications = [
   { name: 'Data Analytics', source: 'Coursera', accent: '#1f7a5a' },
   { name: 'Machine Learning', source: 'Python', accent: '#1d4ed8' },
   { name: 'Statistics', source: 'Kaggle', accent: '#0f766e' },
   { name: 'SQL', source: 'DataCamp', accent: '#f59e0b' },
   { name: 'Power BI', source: 'Microsoft', accent: '#dc2626' },
   { name: 'Forecasting', source: 'Applied', accent: '#7c3aed' }
-]
+]*/

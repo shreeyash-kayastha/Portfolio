@@ -39,11 +39,20 @@ const Education = () => {
               For a complete overview of my education, experience, and qualifications, please view or download my resume.
             </p>
             <div className="resume-actions">
-              <a href="#" className="btn btn-primary">
-                View Resume
+              <a
+                href="/assets/Shreeyash_Kayastha_CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary"
+              >
+               View Resume
               </a>
-              <a href="#" className="btn btn-secondary">
-                Download CV
+              <a
+               href="/assets/Shreeyash_Kayastha_CV.pdf"
+               download="Shreeyash_Kayastha_CV.pdf"
+               className="btn btn-secondary"
+              >
+               Download CV
               </a>
             </div>
           </div>
