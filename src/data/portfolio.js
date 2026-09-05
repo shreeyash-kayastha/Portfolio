@@ -31,7 +31,7 @@ export const projectsData = [
         'Hyperparameter optimization with Optuna',
         'Balancing model complexity with interpretability'
       ],
-      github: 'https://github.com',
+      github: null,
       live: null
     },
     image: '/assets/project-nepse.svg',
@@ -58,7 +58,7 @@ export const projectsData = [
         key: 'Placeholder - Add your results'
       },
       learned: ['Customer insights', 'Data visualization'],
-      github: 'https://github.com',
+      github: null,
       live: null
     },
     image: '/assets/project-placeholder.svg',
@@ -78,7 +78,7 @@ export const projectsData = [
       method: { approach: 'Placeholder' },
       results: { key: 'Placeholder' },
       learned: ['Placeholder'],
-      github: 'https://github.com',
+      github: null,
       live: null
     },
     image: '/assets/project-placeholder.svg',
@@ -98,7 +98,7 @@ export const projectsData = [
       method: { approach: 'Placeholder' },
       results: { key: 'Placeholder' },
       learned: ['Placeholder'],
-      github: 'https://github.com',
+      github: 'https://github.com/shreeyash-kayastha/TOTP-QR-Code-Generator',
       live: null
     },
     image: '/assets/project-placeholder.svg',

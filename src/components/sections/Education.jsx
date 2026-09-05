@@ -2,6 +2,8 @@ import React from 'react'
 import { educationData } from '../../data/portfolio'
 import './Education.css'
 
+const resumeUrl = `${import.meta.env.BASE_URL}assets/Shreeyash_Kayastha_CV.pdf`
+
 const Education = () => {
   return (
     <section id="education" className="education">
@@ -40,7 +42,7 @@ const Education = () => {
             </p>
             <div className="resume-actions">
               <a
-                href="/assets/Shreeyash_Kayastha_CV.pdf"
+                href={resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-primary"
@@ -48,7 +50,7 @@ const Education = () => {
                View Resume
               </a>
               <a
-               href="/assets/Shreeyash_Kayastha_CV.pdf"
+               href={resumeUrl}
                download="Shreeyash_Kayastha_CV.pdf"
                className="btn btn-secondary"
               >

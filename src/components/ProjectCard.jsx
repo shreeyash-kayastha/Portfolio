@@ -25,16 +25,18 @@ const ProjectCard = ({ project, onExpand }) => {
         ))}
       </div>
 
-      <div className="project-footer">
-        <button
-          className="project-link"
-          onClick={() => onExpand(project)}
-          aria-label={`View case study for ${project.title}`}
-        >
-          View Case Study
-          <span className="link-arrow">→</span>
-        </button>
-      </div>
+      {project.caseStudy.github && (
+        <div className="project-footer">
+          <button
+            className="project-link"
+            onClick={() => onExpand(project)}
+            aria-label={`View case study for ${project.title}`}
+          >
+            View Case Study
+            <span className="link-arrow">→</span>
+          </button>
+        </div>
+      )}
 
       <div className="project-accent" style={{ backgroundColor: project.color }}></div>
     </div>
