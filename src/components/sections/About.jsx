@@ -47,46 +47,6 @@ const About = () => {
           </div>
         </div>
 
-        <div className="recommendations-block">
-          <div className="section-block-header">
-            <span className="section-kicker">Recommendations</span>
-          </div>
-
-          <div className="recommendation-list">
-            {recommendations.map((item) => (
-              <article className="recommendation-card" key={item.name}>
-                <div className="avatar-orb" aria-hidden="true">{item.name.split(' ').map(part => part[0]).slice(0, 2).join('')}</div>
-                <div className="recommendation-copy">
-                  <div className="person-meta">
-                    <strong>{item.name}</strong>
-                    <span>{item.role}</span>
-                  </div>
-                  <p>“{item.quote}”</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-
-        <div className="certifications-block">
-          <div className="section-block-header">
-            <span className="section-kicker">Certifications</span>
-          </div>
-
-          <div className="certification-grid">
-            {certifications.map((cert) => (
-              <div className="certification-card" key={cert.name}>
-                <div className="cert-chip" style={{ background: cert.accent }}>
-                  {cert.name.charAt(0)}
-                </div>
-                <div className="cert-copy">
-                  <h3>{cert.name}</h3>
-                  <span>{cert.source}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   )
