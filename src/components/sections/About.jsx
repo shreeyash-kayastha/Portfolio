@@ -1,5 +1,5 @@
 import React from 'react'
-import { recommendations, certifications } from '../../data/portfolio'
+
 import './About.css'
 
 const About = () => {
